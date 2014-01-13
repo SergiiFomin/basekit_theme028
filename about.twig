@@ -1,0 +1,118 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bg-glow">
+    <div class="global">
+        <!--header-->
+        <header>
+            <div class="header">
+                <div class="container">
+                    <div class="row">
+                        <article class="span12">
+                            <div class="row">
+                                <article class="span3">
+                                    {{widget('logo', 'name', {"defaultlogo": asset('images/logo.png')})|raw}}
+                                </article>
+                                <article class="span6">
+                                    {{widget('extendednavigation', 'extendednavigation', {"align":"center"})|raw}}
+                                </article>
+                                <article class="span3">
+                                    {{widget('socialicons', 'socialicons', {'googleplus': 'https://plus.google.com', 'linkedin':'http://www.linkedin.com', 'facebook': 'https://www.facebook.com', 'twitter': 'https://twitter.com', 'youtube': 'https://www.youtube.com', 'rss': '#'})|raw}}
+                                </article>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--content-->
+        <div class="container">
+            <div class="row">
+                <article class="span12">
+                    <div class="row center">
+                        <article class="span3">
+                            <figure>{{widget('image', 'image1', { 'src': asset('images/pages/page2-img1.jpg'), 'imageWidth': '480px'})|raw}}</figure>
+                            {{widget('content', 'text1', {content: '<h3>Lorem ipsum dolor sit</h3><p>Accusantium doloremque laudantium, totam rem aperiam, eaqipsa quae ab illo inventore veritatis et quasi.</p>', lines: 'all'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                        </article>
+                        <article class="span3">                            
+                            <figure>{{widget('image', 'image2', { 'src': asset('images/pages/page2-img2.jpg'), 'imageWidth': '480px'})|raw}}</figure>
+                            {{widget('content', 'text2', {content: '<h3>Praesent vestibulum molestie lacus</h3><p>Accusantium doloremque laudantium, totam rem aperiam, eaqipsa quae.</p>', lines: 'all'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                        </article>
+                        <article class="span3">
+                            <figure>{{widget('image', 'image3', { 'src': asset('images/pages/page2-img3.jpg'), 'imageWidth': '480px'})|raw}}</figure>
+                            {{widget('content', 'text3', {content: '<h3>Vestibulum iaculis</h3><p>Accusantium doloremque laudantium, totam rem aperiam, eaqipsa quae ab illo inventore veritatis et quasi.</p>', lines: 'all'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                        </article>
+                        <article class="span3">
+                            <figure>{{widget('image', 'image4', { 'src': asset('images/pages/page2-img4.jpg'), 'imageWidth': '480px'})|raw}}</figure>
+                            {{widget('content', 'text4', {content: '<h3>Sed ut perspiciatis</h3><p>Accusantium doloremque laudantium, totam rem aperiam, eaqipsa quae ab illo inventore veritatis et quasi.</p>', lines: 'all'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                        </article>
+                    </div>
+                    <div class="row">
+                        <article class="span4">
+                            {{widget('content', 'text5', {content: '<h3>title</h3><ul class="item-list"><li><a href="#">Lorem ipsum dolor sit amet</a></li><li><a href="#">Consectetuer adipiscing</a></li><li><a href="#">Praesent vestibulum molestie</a></li><li><a href="#">Aenean nonummy hendrerit</a></li><li><a href="#">Fusce suscipit varius mi</a></li><li><a href="#">Vestibulum libero nisl</a></li><li><a href="#">Vestibulum iaculis lacinia est</a></li><li><a href="#">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</a></li><li><a href="#">Vestibulum libero nisl porta vel scelerisque</a></li><li><a href="#">Ut enim ad minima veniam quis nostrum exercitationem ullam corporis</a></li><li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit unde omnis iste natus</a></li><li><a href="#">Proin dictum elementum velit fusce euismod consequat nostrum exercitationem</a></li><li><a href="#">Accusantium doloremque laudantium totam</a></li></ul>', lines: 'all'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                        </article>
+                        <article class="span8">
+                            {{widget('content', 'text6', {content: '<h3>services overview</h3><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.</p><p>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penat et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit.</p>', lines: 'all'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                            <div class="row">
+                                <article class="span4">
+                                    <figure class="fleft">{{widget('image', 'image5', { 'src': asset('images/icons/icon5.png'), 'imageWidth': '90px'})|raw}}</figure>
+                                    <div class="overflow">
+                                        {{widget('content', 'text7', {content: '<h5>Doloremque laudantium totam rem</h5>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.', lines: 'all'})|raw}}
+                                    </div>
+                                    <div class="clear"></div>
+                                    {{widget('space', 'space', {'height': '50'})|raw}}
+                                    <figure class="fleft">{{widget('image', 'image6', { 'src': asset('images/icons/icon6.png'), 'imageWidth': '90px'})|raw}}</figure>
+                                    <div class="overflow">
+                                        {{widget('content', 'text8', {content: '<h5>Doloremque laudantium totam rem</h5>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.', lines: 'all'})|raw}}
+                                    </div>
+                                    <div class="clear"></div>
+                                    {{widget('space', 'space', {'height': '50'})|raw}}
+                                </article>
+                                <article class="span4">
+                                    <figure class="fleft">{{widget('image', 'image7', { 'src': asset('images/icons/icon7.png'), 'imageWidth': '90px'})|raw}}</figure>
+                                    <div class="overflow">
+                                        {{widget('content', 'text9', {content: '<h5>Doloremque laudantium totam rem</h5>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.', lines: 'all'})|raw}}
+                                    </div>
+                                    <div class="clear"></div>
+                                    {{widget('space', 'space', {'height': '50'})|raw}}
+                                    <figure class="fleft">{{widget('image', 'image8', { 'src': asset('images/icons/icon8.png'), 'imageWidth': '90px'})|raw}}</figure>
+                                    <div class="overflow">
+                                        {{widget('content', 'text10', {content: '<h5>Doloremque laudantium totam rem</h5>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.', lines: 'all'})|raw}}
+                                    </div>
+                                    <div class="clear"></div>
+                                    {{widget('space', 'space', {'height': '50'})|raw}}
+                                </article>
+                            </div>
+                            {{widget('content', 'text11', {content: 'Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penat et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros.', lines: 'all'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                        </article>
+                    </div>
+
+                    {{zone('main')|raw}}
+
+                </article>
+            </div>
+        </div>
+        <!--footer-->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <section class="span12">
+                        {{widget('companyname', 'companyname', {"business": "Construction Co."})|raw}}
+                        {{widget('profile', 'copyright', { 'profileType':'copyright', 'copyright':'© Copyright 2014. All rights reserved'})|raw}}
+                        {{widget('space', 'space', {'height': '30'})|raw}}
+                    </section>
+                </div>
+            </div>
+        </footer>
+    </div>    
+</div>
+
+{% endblock %}

@@ -1,0 +1,141 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bg-glow">    
+    <div class="global">
+        <!--header-->
+        <header>
+            <div class="header">
+                <div class="container">
+                    <div class="row">
+                        <article class="span12">
+                            <div class="row">
+                                <article class="span3">
+                                    {{widget('logo', 'name', {"defaultlogo": asset('images/logo.png')})|raw}}
+                                </article>
+                                <article class="span6">
+                                    {{widget('extendednavigation', 'extendednavigation', {"align":"center"})|raw}}
+                                </article>
+                                <article class="span3">
+                                    {{widget('socialicons', 'socialicons', {'googleplus': 'https://plus.google.com', 'linkedin':'http://www.linkedin.com', 'facebook': 'https://www.facebook.com', 'twitter': 'https://twitter.com', 'youtube': 'https://www.youtube.com', 'rss': '#'})|raw}}
+                                </article>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="showcase">
+                {{widget('responsiveslideshow', 'responsiveslideshow', {'duration':'3', 'crop':1, 'transSpeed': '1000', 'transType': 'fade', 'showDescription': true, 'showTitle': true, 'showButtons': true, 'showBullets': true, 'allowPause': false, 'allowLoop': true, 'images':[{'imageHeight':'438', 'imageWidth':'1920', 'url':asset('/images/slider/slide-1.jpg'), 'title':'Want to build your business?', 'description': 'Build Your Network and Your Business with Us'}, {'imageHeight':'438','imageWidth':'1920', 'url':asset('/images/slider/slide-2.jpg'), 'title':'Lorem ipsum dolor sit', 'description': 'Sed ut perspiciatis unde omnis iste sit voluptatem accusantium'}, {'imageHeight':'438', 'imageWidth':'1920', 'url':asset('/images/slider/slide-3.jpg'), 'title':'Praesent vestibulum moles', 'description': 'Ut enim ad minima veniam quis nostrum exercitationem'}]})|raw}}
+            </div>
+        </header>
+        <!--content-->
+        <div class="container">
+            <div class="row">
+                <article class="span12">
+                    <div class="row center">
+                        <article class="span3">
+                            <figure>{{widget('image', 'image1', { 'src': asset('images/icons/icon1.png'), 'imageWidth': '113px'})|raw}}</figure>
+                            {{widget('content', 'title1', {content: '<h3>laudantium</h3>', lines: 'all'})|raw}}
+                            {{widget('content', 'text1', {content: '<p>Accusantium doloremque laudantium, totam rem aperiam, eaqipsa quae ab illo inventore veritatis et quasi.</p>', lines: 'all'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                        </article>
+                        <article class="span3">
+                            <figure>{{widget('image', 'image2', { 'src': asset('images/icons/icon2.png'), 'imageWidth': '97px'})|raw}}</figure>
+                            {{widget('content', 'title2', {content: '<h3>totam rem aperiam</h3>', lines: 'all'})|raw}}
+                            {{widget('content', 'text2', {content: '<p>Accusantium doloremque laudantium, totam rem aperiam, eaqipsa quae ab illo inventore veritatis et quasi.</p>', lines: 'all'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                        </article>
+                        <article class="span3">
+                            <figure>{{widget('image', 'image3', { 'src': asset('images/icons/icon3.png'), 'imageWidth': '206px'})|raw}}</figure>
+                            {{widget('content', 'title3', {content: '<h3>eaqipsa quae abillo</h3>', lines: 'all'})|raw}}
+                            {{widget('content', 'text3', {content: '<p>Accusantium doloremque laudantium, totam rem aperiam, eaqipsa quae ab illo inventore veritatis et quasi.</p>', lines: 'all'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                        </article>
+                        <article class="span3">
+                            <figure>{{widget('image', 'image4', { 'src': asset('images/icons/icon4.png'), 'imageWidth': '101px'})|raw}}</figure>
+                            {{widget('content', 'title4', {content: '<h3>inventore veritatis</h3>', lines: 'all'})|raw}}
+                            {{widget('content', 'text4', {content: '<p>Accusantium doloremque laudantium, totam rem aperiam, eaqipsa quae ab illo inventore veritatis et quasi.</p>', lines: 'all'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                        </article>
+                    </div>
+                    <div class="row">
+                        <article class="span3">
+                            {{widget('content', 'title5', {content: '<h3>consectetuer adipiscing elit Praesent</h3>', lines: 'all'})|raw}}
+                            {{widget('content', 'text5', {content: '<p>Lorem ipsum dolor et, constetuer adipiscing elit. Praesent vestibulum molestie lacus. Aeneaummy hendrerit mauris. Phasellus pta. Fusce suscipit varius mi. Cum sociibus et magnis dis parturient montes,idicus mus. Nulla dui. Fusce feugiat malesu odio. Morbi nunc odio, graida at, curec, luctus a, lom. Maecenas tristique.</p>', lines: 'all'})|raw}}
+                            {{widget('button', 'button1', {italic: false, text:'click here', 'align':'widget-align-left'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                        </article>
+                        <article class="span9">
+                            <div class="row">
+                                <article class="span3">
+                                    <figure>{{widget('image', 'image5', { 'src': asset('images/pages/page1-img1.jpg'), 'imageWidth': '480px'})|raw}}</figure>
+                                    <figure>{{widget('image', 'image6', { 'src': asset('images/pages/page1-img2.jpg'), 'imageWidth': '480px'})|raw}}</figure>
+                                    {{widget('space', 'space', {'height': '50'})|raw}}
+                                </article>
+                                <article class="span3">
+                                    <figure>{{widget('image', 'image7', { 'src': asset('images/pages/page1-img3.jpg'), 'imageWidth': '480px'})|raw}}</figure>
+                                    <figure>{{widget('image', 'image8', { 'src': asset('images/pages/page1-img4.jpg'), 'imageWidth': '480px'})|raw}}</figure>
+                                    <figure>{{widget('image', 'image9', { 'src': asset('images/pages/page1-img5.jpg'), 'imageWidth': '480px'})|raw}}</figure>
+                                    {{widget('space', 'space', {'height': '50'})|raw}}
+                                </article>
+                                <article class="span3">
+                                    <figure>{{widget('image', 'image10', { 'src': asset('images/pages/page1-img6.jpg'), 'imageWidth': '480px'})|raw}}</figure>
+                                    <figure>{{widget('image', 'image11', { 'src': asset('images/pages/page1-img7.jpg'), 'imageWidth': '480px'})|raw}}</figure>
+                                    {{widget('space', 'space', {'height': '50'})|raw}}
+                                </article>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="row">
+                        <article class="span12 get">
+                            {{widget('content', 'title6', {content: '<h1>Lorem ipsum dolor sit amet consect</h1>', lines: 'all'})|raw}}
+                            {{widget('button', 'button2', {italic: false, text:'Get it now!', 'align':'widget-align-right'})|raw}}
+                            <div class="clear"></div>
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                        </article>                        
+                    </div>
+                    <div class="row">
+                        <article class="span6">      
+                            {{widget('content', 'title7', {content: '<h2>MARKETING</h2>', lines: 'all'})|raw}}                      
+                            <figure class="fleft">{{widget('image', 'image', { 'src': asset('images/pages/page1-img8.jpg'), 'imageWidth': '170px'})|raw}}</figure>
+                            {{widget('content', 'text6', {content: '<h3>Lorem ipsum dolor sit</h3><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorem.</p><p>Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>', lines: 'all'})|raw}}
+                            <div class="clear"></div>
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                        </article>
+                        <article class="span6">
+                            {{widget('content', 'title9', {content: '<h2>WORK FLOW</h2>', lines: 'all'})|raw}}
+                            <div class="row">
+                                <article class="span3">
+                                    {{widget('content', 'text7', {content: '<ul class="item-list"><li><a href="#">Manage My Vendors</a></li><li><a href="#">Qualify My Vendors</a></li><li><a href="#">Update My ProView</a></li><li><a href="#">Search for Companies</a></li><li><a href="#">Search for Building Products</a></li><li><a href="#">Find Project Leads</a></li></ul>', lines: 'all'})|raw}}
+                                    {{widget('space', 'space', {'height': '50'})|raw}}
+                                </article>
+                                <article class="span3">
+                                    {{widget('content', 'text8', {content: '<ul class="item-list"><li><a href="#">Send Bid Invitations</a></li><li><a href="#">Share Plans and Specs</a></li><li><a href="#">View/Markup/Takeoff</a></li><li><a href="#">Request a Free Blue Book</a></li><li><a href="#">Get Jobsite Equipment Quotes</a></li><li><a href="#">News Room</a></li></ul>', lines: 'all'})|raw}}
+                                    {{widget('space', 'space', {'height': '50'})|raw}}
+                                </article>
+                            </div>
+                        </article>
+                    </div>
+
+                    {{zone('main')|raw}}
+
+                </article>
+            </div>
+        </div>
+        <!--footer-->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <section class="span12">
+                        {{widget('companyname', 'companyname', {"business": "Construction Co."})|raw}}
+                        {{widget('profile', 'copyright', { 'profileType':'copyright', 'copyright':'© Copyright 2014. All rights reserved'})|raw}}
+                        {{widget('space', 'space', {'height': '30'})|raw}}
+                    </section>
+                </div>
+            </div>
+        </footer>
+    </div>    
+</div>
+
+{% endblock %}
