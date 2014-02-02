@@ -33,6 +33,9 @@
         <div class="container">
             <div class="row">
                 <article class="span12">
+
+                    {{zone('main')|raw}}
+                    
                     <div class="row center">
                         <article class="span3">
                             <figure>{{widget('image', 'image1', { 'src': asset('images/icons/icon1.png'), 'imageWidth': '113px'})|raw}}</figure>
@@ -109,8 +112,6 @@
                             </div>
                         </article>
                     </div>
-
-                    {{zone('main')|raw}}
 
                 </article>
             </div>
