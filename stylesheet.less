@@ -1,5 +1,3 @@
-@import "@{templateCommon}/basekit-bootstrap.less";
-
 @color-swatch1:            #ffffff;
 @color-swatch2:            #888888;
 @color-swatch3:            #1ab7ec;
@@ -512,7 +510,6 @@ div[id$="copyright"] {
           display: block;
           width: 100%;
           padding: 0px;
-          border: ;
           .box-sizing(border-box);
           &.folder > .text,
           > a {
@@ -699,37 +696,6 @@ div[id$="copyright"] {
       margin: 0px 0px 50px auto;
     }
   }
-}
-
-/* ===============================
-   REDIRECT WIDGET
-   =============================== */
-
-.widget.redirecttodesktop {
-  padding: 8px 0;
-  a {
-    padding-right: 30px;
-    padding-top: 2px;
-    background-image: image('/images/desktop.png');
-    background-repeat: no-repeat;
-    background-position: right center;
-    font-size: 12px;
-    text-shadow: 0 1px 0 rgba(255,255,255,.5);
-    text-decoration: none;
-    cursor: pointer;
-    color: @font-swatch5-color;
-    font-family: @font-swatch5-font-family;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-}
-.desktop a:active {
-  background-image: image('/images/desktop.png');
-  background-repeat: no-repeat;
-  background-position: right center;
-  cursor: pointer;
-  text-decoration: underline;
 }
 
 /* ===============================
